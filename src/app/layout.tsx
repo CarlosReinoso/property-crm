@@ -1,4 +1,5 @@
 import NavSideBar from "@/components/NavSideBar/NavSideBar";
+import ThemeRegistry from "@/components/ThemeRegistry/ThemeRegistry";
 import { Box } from "@mui/material";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,20 +19,29 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Box
-        component={"body"}
-        className={inter.className}
-        sx={{
-          display: "flex",
-          margin: "0px 0px",
-        }}
-      >
-        <Box>
-          <Link href="/">Logo</Link>
-          <NavSideBar />
+      <ThemeRegistry>
+        <Box
+          component={"body"}
+          className={inter.className}
+          sx={{
+            display: "flex",
+            margin: "0px 0px",
+            height: "100vh",
+          }}
+        >
+          <Box sx={{ bgcolor: "lightgreen", color: "white" }}>
+            <Link href="/">Logo</Link>
+            <NavSideBar />
+          </Box>
+          <Box
+            sx={{
+              width: "100%",
+            }}
+          >
+            {children}
+          </Box>
         </Box>
-        <Box>{children}</Box>
-      </Box>
+      </ThemeRegistry>
     </html>
   );
 }

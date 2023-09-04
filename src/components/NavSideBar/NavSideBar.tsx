@@ -1,11 +1,11 @@
 "use client";
-
 import { Box, ListItemButton, ListItemIcon, ListItemText } from "@mui/material";
 import { useRouter } from "next/navigation";
 import SendIcon from "@mui/icons-material/Send";
 import { ReactNode } from "react";
 
 const NavItem = [
+  { link: "Home", icon: <SendIcon /> },
   { link: "Leads", icon: <SendIcon /> },
   { link: "Properties", icon: <SendIcon /> },
 ];
@@ -15,7 +15,7 @@ const NavListItem = ({ link, icon }: { link: string; icon: ReactNode }) => {
 
   return (
     <>
-      <ListItemButton onClick={() => router.push(link.toLocaleLowerCase())}>
+      <ListItemButton onClick={() => router.push(link.toLowerCase())}>
         <ListItemIcon>{icon}</ListItemIcon>
         <ListItemText primary={link} />
       </ListItemButton>
