@@ -20,9 +20,13 @@ const theme = createTheme({
         root: {
           textTransform: "capitalize",
           borderRadius: "20px",
+          maxHeight: "40px",
         },
         contained: {
           backgroundColor: "green",
+          "&:hover": {
+            backgroundColor: "lightgreen",
+          },
         },
       },
     },
