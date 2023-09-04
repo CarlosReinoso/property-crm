@@ -1,6 +1,8 @@
+import NavSideBar from "@/components/NavSideBar/NavSideBar";
 import { Box } from "@mui/material";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,10 +23,12 @@ export default function RootLayout({
         className={inter.className}
         sx={{
           display: "flex",
+          margin: "0px 0px",
         }}
       >
         <Box>
-          <h1>layout</h1>
+          <Link href="/">Logo</Link>
+          <NavSideBar />
         </Box>
         <Box>{children}</Box>
       </Box>
