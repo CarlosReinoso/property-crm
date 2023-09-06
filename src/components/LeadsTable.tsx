@@ -1,7 +1,7 @@
 "use client";
 import { Box } from "@mui/material";
 import * as React from "react";
-import { DataGrid } from "@mui/x-data-grid";
+import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 90 },
