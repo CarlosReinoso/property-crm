@@ -1,0 +1,12 @@
+{
+  "42P01": "The database does not exist.",
+  "42P02": "The database is not accessible.",
+  "42P03": "The database is not in a valid state.",
+  "42P04": "The database user does not have the necessary permissions.",
+  "42P05": "The database table does not exist.",
+  "42P06": "The database column does not exist.",
+  "42P07": "The relation already exists.",
+  "42P08": "The database query is invalid.",
+  "42P09": "The database server is not responding.",
+  "42P10": "The database connection has been closed."
+}

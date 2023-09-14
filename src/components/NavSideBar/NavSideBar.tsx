@@ -26,8 +26,8 @@ const NavListItem = ({ link, icon }: { link: string; icon: ReactNode }) => {
 const NavSideBar = () => {
   return (
     <Box>
-      {NavItem.map((i) => (
-        <NavListItem link={i.link} icon={i.icon}></NavListItem>
+      {NavItem.map((i, index) => (
+        <NavListItem key={index} link={i.link} icon={i.icon}></NavListItem>
       ))}
     </Box>
   );
