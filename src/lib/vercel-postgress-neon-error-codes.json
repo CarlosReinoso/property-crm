@@ -8,5 +8,6 @@
   "42P07": "The relation already exists.",
   "42P08": "The database query is invalid.",
   "42P09": "The database server is not responding.",
-  "42P10": "The database connection has been closed."
+  "42P10": "The database connection has been closed.",
+  "42703":"column of relation in table does not exist"
 }
